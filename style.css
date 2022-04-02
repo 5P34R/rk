@@ -12,7 +12,7 @@ body {
     height: 100vh;
     width: 100vw;
     position: relative;
-    background: url("/images/bg.png");
+    background: url("images/bg.png");
     background-position: right;
     background-size:cover;
     background-repeat: no-repeat;
@@ -47,12 +47,17 @@ body {
 }
 
 .nav .icons > a {
-    color: #e3472f;
+    color: #ffffff;
     font-size: 2rem;
 }
 
 .hero {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*background-color: steelblue;*/
+    height: 65vh;
 }
 .hero .hero__top > * {
     margin-bottom: 1rem;
@@ -69,10 +74,51 @@ body {
     font-size: 3rem;
 }
 
+.hero__countdown-notifier {
+    color: #454E57;
+    font-family: 'Cinzel Decorative','poppins', sans-serif;
+    margin-bottom:.5rem;
+    font-size: 1.25rem;
+}
+
 .hero__content .countdown {
     display: flex;
     justify-content: center;
     font-family: 'poppins',sans-serif;
+}
+.hero__content .countdown div {
+    padding:0 2rem;
+    position: relative;
+}
+.hero__content .countdown div:last-child {
+    padding-right: 0;
+}
+
+.hero__content .countdown div:not(:last-child)::before,
+.hero__content .countdown div:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #454E57;
+    border-radius: 50%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero__content .countdown div:not(:last-child)::after {
+    top: 30%;
+}
+
+.hero__content .countdown > div > p:nth-of-type(1) {
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+}
+
+.hero__content .countdown > div p:nth-of-type(2) {
+    font-size: 1.5rem;
+    color: #ff0000;
 }
 
 .footer {
@@ -88,3 +134,4 @@ body {
     color: #e3472f70;
     font-family: 'cabin sketch', 'poppins', sans-serif;
 }
+/* todo : responsive, countdown */
