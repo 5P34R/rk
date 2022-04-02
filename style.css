@@ -1,0 +1,90 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 5rem;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: url("/images/bg.png");
+    background-position: right;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+}
+
+.nav > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav > div > :nth-child(1){
+    margin-right: 1rem;
+}
+
+.nav .logo {
+    width: 4rem;
+    height: auto;
+}
+
+.nav .logoText {
+    font-family: 'Cinzel Decorative', 'poppins', sans-serif;
+    font-size: 2rem;
+    color: #ff0000;
+}
+
+.nav .icons > a {
+    color: #e3472f;
+    font-size: 2rem;
+}
+
+.hero {
+    text-align: center;
+}
+.hero .hero__top > * {
+    margin-bottom: 1rem;
+}
+.hero .hero__tagline {
+    color: #454E57;
+    font-family: 'Oldenburg','poppins',sans-serif;
+    font-size: 1.5rem;
+}
+
+.hero .hero__title {
+    color: #ff0000;
+    font-family: 'New Rocker','poppins',sans-serif;
+    font-size: 3rem;
+}
+
+.hero__content .countdown {
+    display: flex;
+    justify-content: center;
+    font-family: 'poppins',sans-serif;
+}
+
+.footer {
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    font-size: 1.5rem;
+}
+
+.footer p {
+    color: #e3472f70;
+    font-family: 'cabin sketch', 'poppins', sans-serif;
+}
