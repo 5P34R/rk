@@ -48,7 +48,7 @@ body {
 .nav .logoText {
     font-family: 'Cinzel Decorative', 'poppins', sans-serif;
     font-size: 2rem;
-    color: var(--primary-light);
+    color: var(--primary);
 }
 
 .nav .icons > a {
