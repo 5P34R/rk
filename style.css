@@ -134,4 +134,5 @@ body {
 .footer p {
     color: var(--primary-light);
     font-family: 'cabin sketch', 'poppins', sans-serif;
+    text-align: center;
 }
