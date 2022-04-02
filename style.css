@@ -8,14 +8,19 @@
     padding: 0 5rem;
 }
 
+:root {
+    --primary: #ff0000;
+    --secondary: #454E57;
+    --primary-light: #e3472f70;
+
+    --light: #ffffff;
+}
+
 body {
     height: 100vh;
     width: 100vw;
     position: relative;
-    background: url("images/bg.png");
-    background-position: right;
-    background-size:cover;
-    background-repeat: no-repeat;
+    background: no-repeat right/cover url("images/bg.png");
 }
 
 .nav {
@@ -43,11 +48,11 @@ body {
 .nav .logoText {
     font-family: 'Cinzel Decorative', 'poppins', sans-serif;
     font-size: 2rem;
-    color: #ff0000;
+    color: var(--primary-light);
 }
 
 .nav .icons > a {
-    color: #ffffff;
+    color: var(--light);
     font-size: 2rem;
 }
 
@@ -56,26 +61,25 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*background-color: steelblue;*/
     height: 65vh;
 }
 .hero .hero__top > * {
     margin-bottom: 1rem;
 }
 .hero .hero__tagline {
-    color: #454E57;
+    color: var(--secondary);
     font-family: 'Oldenburg','poppins',sans-serif;
     font-size: 1.5rem;
 }
 
 .hero .hero__title {
-    color: #ff0000;
+    color: var(--primary);
     font-family: 'New Rocker','poppins',sans-serif;
     font-size: 3rem;
 }
 
 .hero__countdown-notifier {
-    color: #454E57;
+    color: var(--secondary);
     font-family: 'Cinzel Decorative','poppins', sans-serif;
     margin-bottom:.5rem;
     font-size: 1.25rem;
@@ -106,19 +110,16 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-
 .hero__content .countdown div:not(:last-child)::after {
     top: 30%;
 }
-
 .hero__content .countdown > div > p:nth-of-type(1) {
-    color: rgb(255, 255, 255);
+    color: var(--light);
     font-size: 5rem;
 }
-
 .hero__content .countdown > div p:nth-of-type(2) {
     font-size: 1.5rem;
-    color: #ff0000;
+    color: var(--primary);
 }
 
 .footer {
@@ -131,7 +132,6 @@ body {
 }
 
 .footer p {
-    color: #e3472f70;
+    color: var(--primary-light);
     font-family: 'cabin sketch', 'poppins', sans-serif;
 }
-/* todo : responsive, countdown */
