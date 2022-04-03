@@ -17,7 +17,7 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     position: relative;
     background: no-repeat right/cover url("images/bg.png");
@@ -124,7 +124,7 @@ body {
 }
 
 .footer {
-    position: fixed;
+    position: absolute;
     bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
@@ -213,5 +213,37 @@ body {
         background: #0000005e;
         border-radius: 13px;
         padding: 0.5rem;
+    }
+
+    .footer {
+        bottom: 1rem;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:350px) {
+    .container {
+        padding: 0 1rem;
+    }
+    .nav .logo {
+        width: 30px;
+        height: 30px;
+    }
+    .nav>div> :nth-child(1) {
+        margin-right: .25rem;
+    }
+    .nav .logoText, .nav .icons>a {
+        font-size: 1.25rem;
+    }
+
+    .hero .hero__tagline {
+        font-size: 1rem;
+    }
+    
+    .hero .hero__title {
+        font-size: 1.75rem;
     }
 }
