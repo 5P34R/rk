@@ -161,4 +161,57 @@ body {
     }
 }
 
-/* @media (max-width:600px) */
+@media (max-width:600px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .nav .logo {
+        width: 50px;
+        height: 50px;
+    }
+    .nav .logoText {
+        font-size: 1.5rem;
+    }
+
+    .nav .icons>a {
+        font-size: 1.5rem;
+    }
+
+    .hero .hero__tagline {
+        font-size: 1.45rem;
+    }
+    .hero .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__content .countdown>div:last-child {
+        padding-left: 0;
+    }
+
+    .hero__content .countdown>div>p:nth-of-type(1) {
+        color: var(--light);
+        font-size: 3rem;
+    }
+    
+    .hero__content .countdown>div p:nth-of-type(2) {
+        font-size: 1.25rem;
+        color: var(--primary);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .hero__tagline {
+        font-size: 1.15rem;
+    }
+    
+    .hero .hero__title {
+        font-size: 2rem;
+    }
+    .hero__countdown-notifier {
+        color: #d1e8ff;
+        background: #0000005e;
+        border-radius: 13px;
+        padding: 0.5rem;
+    }
+}
