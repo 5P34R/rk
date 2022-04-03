@@ -191,6 +191,10 @@ body {
         font-size: 2.5rem;
     }
 
+    .hero__content .countdown {
+        margin-bottom: 2rem;
+    }
+
     .hero__content .countdown>div:last-child {
         padding-left: 0;
     }
@@ -203,6 +207,9 @@ body {
     .hero__content .countdown>div p:nth-of-type(2) {
         font-size: 1.25rem;
         color: var(--primary);
+    }
+    .footer {
+        margin-top: 3rem;
     }
 }
 
@@ -227,6 +234,15 @@ body {
 
     .footer p {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav>div> :nth-child(1){
+        margin-right: .5rem;
+    }
+    .nav .logoText {
+        font-size: 1.25rem;
     }
 }
 
