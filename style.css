@@ -138,6 +138,12 @@ body {
     text-align: center;
 }
 
+@media (min-width: 300px) and (max-width: 767px) and (orientation: landscape) {
+    .aside.landscape-notifier {
+        display: none;
+    }
+}
+
 @media (max-width:778px) {
     .hero__content .countdown div {
         width: 100px;
@@ -245,5 +251,20 @@ body {
     
     .hero .hero__title {
         font-size: 1.75rem;
+    }
+}
+@media (min-width: 300px) and (max-width: 767px) and (orientation: landscape) {
+    body :not(aside) {
+        display: none;
+    }
+    aside.landscape-notifier {
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
     }
 }
