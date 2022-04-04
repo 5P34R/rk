@@ -139,8 +139,11 @@ body {
     text-align: center;
 }
 
+aside.landscape-notifier {
+    display: none;
+}
 @media (min-width: 300px) and (max-width: 767px) and (orientation: landscape) {
-    .aside.landscape-notifier {
+    aside.landscape-notifier {
         display: none;
     }
 }
