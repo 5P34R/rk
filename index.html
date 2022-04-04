@@ -8,7 +8,7 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Cinzel+Decorative&family=New+Rocker&family=Oldenburg&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Cinzel+Decorative:wght@400;700&family=New+Rocker&family=Oldenburg&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/39350fd9df.js" crossorigin="anonymous"></script>
@@ -61,5 +61,35 @@
     <aside class="landscape-notifier">
         Please turn your device to portrait mode
     </aside>
+
+    <script type="text/javascript">
+        const targetDate = new Date('June 21, 2022 00:00:00').getTime() 
+
+        function countdown() {
+            const currentTime = new Date().getTime()
+            const remainingTime = targetDate - currentTime
+
+            //unit - taken in ms
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const _day = Math.floor( remainingTime / day) 
+            const _hour = Math.floor( (remainingTime % day) / hour) 
+            const _minute = Math.floor( (remainingTime % hour) / minute) 
+            const _second = Math.floor( (remainingTime % minute) / second) 
+
+            //console.log(document.querySelector('.day'))
+
+            document.querySelector('.day').firstElementChild.innerHTML = _day
+            document.querySelector('.hour').firstElementChild.innerHTML = _hour
+            document.querySelector('.minute').firstElementChild.innerHTML = _minute
+            document.querySelector('.second').firstElementChild.innerHTML = _second
+
+        }
+        
+        setInterval(() => countdown(), 1000);
+    </script>
 </body>
 </html>
